@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="data : ${dataList}">
+                <td td:text="${data}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
